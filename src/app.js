@@ -3,7 +3,7 @@ import { createBot, createProvider, createFlow, addKeyword } from '@builderbot/b
 import { MemoryDB as Database } from '@builderbot/bot';
 import { BaileysProvider as Provider } from '@builderbot/provider-baileys';
 
-const PORT = process.env.PORT ?? 3001;
+const PORT = process.env.PORT ?? 3000;
 
 // Flujo para volver al menú principal
 const volverMenuPrincipalFlow = addKeyword('volver')
@@ -252,7 +252,7 @@ const prestamosFlow = addKeyword(['Créditos', 'créditos', 'Creditos', 'credito
                             media: 'https://zipaquiradigital.com/wp-content/uploads/2024/08/liibre-inversion.jpg'
                         },
                         {
-                            body: '🌐 Simular Crédito 👉 [Calculadora de Crédito Personal](https://www.bancocajasocial.com/calculadora-financiera/simulador-credito-consumo/)',
+                            body: '🌐 Simular Crédito 👉 Calculadora de Crédito Personal (https://www.bancocajasocial.com/calculadora-financiera/simulador-credito-consumo/)',
                         },
                         {
                             body: '🔙 Escribe "*volver*" para regresar al menú.',
@@ -265,7 +265,7 @@ const prestamosFlow = addKeyword(['Créditos', 'créditos', 'Creditos', 'credito
                             media: 'https://zipaquiradigital.com/wp-content/uploads/2024/08/hipotecario.jpg'
                         },
                         {
-                            body: '🌐 Simular Crédito 👉 [Calculadora de Crédito Hipotecario](https://www.bancocajasocial.com/calculadora-financiera/simulador-credito-hipotecario/)',
+                            body: '🌐 Simular Crédito 👉 Calculadora de Crédito Hipotecario (https://www.bancocajasocial.com/calculadora-financiera/simulador-credito-hipotecario/)',
                         },
                         {
                             body: '🔙 Escribe "*volver*" para regresar al menú.',
@@ -278,7 +278,7 @@ const prestamosFlow = addKeyword(['Créditos', 'créditos', 'Creditos', 'credito
                             media: 'https://zipaquiradigital.com/wp-content/uploads/2024/08/compra-de-cartera.jpg'
                         },
                         {
-                            body: '🌐 ¡Solicite su crédito! 👉 [Solicitud de Crédito](https://www.bancocajasocial.com/solicitud-producto/)',
+                            body: '🌐 ¡Solicite su crédito! 👉 Solicitud de Crédito (https://www.bancocajasocial.com/solicitud-producto/)',
                         },
                         {
                             body: '🔙 Escribe "*volver*" para regresar al menú.',
@@ -291,7 +291,7 @@ const prestamosFlow = addKeyword(['Créditos', 'créditos', 'Creditos', 'credito
                             media: 'https://zipaquiradigital.com/wp-content/uploads/2024/08/credito-Libranza.jpg'
                         },
                         {
-                            body: '🌐 Simular Crédito 👉 [Calculadora de Crédito Personal](https://www.bancocajasocial.com/calculadora-financiera/simulador-credito-consumo/)',
+                            body: '🌐 Simular Crédito 👉 Calculadora de Crédito Personal (https://www.bancocajasocial.com/calculadora-financiera/simulador-credito-consumo/)',
                         },
                         {
                             body: '🔙 Escribe "*volver*" para regresar al menú.',
@@ -394,5 +394,4 @@ const main = async () => {
 
     httpServer(+PORT);
 };
-
 main();
